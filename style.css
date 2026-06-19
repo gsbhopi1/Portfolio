@@ -10,6 +10,7 @@ body{
     color:#333;
     line-height:1.6;
     overflow-x:hidden;
+    width: 100%;
 }
 
 header{
@@ -153,7 +154,7 @@ section h2{
 }
 
 #contact{
-     min-height:auto;
+    min-height:auto;
     padding:100px 10%;
     background:#171f2d;
     color:white;
@@ -190,8 +191,8 @@ footer{
     margin:auto;
     display:grid;
     grid-template-columns:1.2fr 1fr;
-    gap:60px;
-    align-items:center;
+    gap:50px;
+    align-items:start;
 }
 .contact-left{
     width:100%;
@@ -230,6 +231,8 @@ footer{
 
 .contact-form input,
 .contact-form textarea{
+    width: 100%;
+    display: block;
     padding:15px;
     border:none;
     border-radius:10px;
@@ -319,7 +322,7 @@ footer{
 
     .contact-container{
         grid-template-columns:1fr;
-        gap:40px;
+        gap:30px;
     }
 
     .contact-right{
@@ -338,5 +341,8 @@ footer{
 
     footer{
         text-align:center;
+    }
+    #contact{
+        padding:80px 8%;
     }
 }
