@@ -153,8 +153,8 @@ section h2{
 }
 
 #contact{
-    min-height:80vh;
-    padding:80px 10%;
+     min-height:auto;
+    padding:100px 10%;
     background:#171f2d;
     color:white;
 }
