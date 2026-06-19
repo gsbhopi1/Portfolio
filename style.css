@@ -9,6 +9,7 @@ body{
     background:#f4f4f4;
     color:#333;
     line-height:1.6;
+    overflow-x:hidden;
 }
 
 header{
@@ -170,36 +171,6 @@ footer{
     padding:20px;
 }
 
-@media(max-width:768px){
-
-    nav{
-        flex-direction:column;
-        gap:15px;
-    }
-
-    nav ul{
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-
-    .hero h1{
-        font-size:2rem;
-    }
-
-    .hero p{
-        font-size:1rem;
-    }
-
-    .contact-container{
-        grid-template-columns:1fr;
-        gap:40px;
-    }
-
-    .contact-right{
-        text-align:center;
-    }
-}
-
 #about{
     background:#f8fafc;
 }
@@ -283,4 +254,89 @@ footer{
 
 .contact-form button:hover{
     transform:translateY(-3px);
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+        padding:20px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .hero{
+        height:85vh;
+        padding:20px;
+    }
+
+    .hero h1{
+        font-size:2.8rem;
+        line-height:1.2;
+        text-align:center;
+    }
+
+    .hero p{
+        font-size:1rem;
+        text-align:center;
+    }
+
+    section{
+        min-height:auto;
+        padding:80px 8%;
+    }
+
+    section h2{
+        font-size:2.2rem;
+        margin-bottom:40px;
+    }
+
+    #about p{
+        font-size:1.1rem;
+        line-height:1.8;
+    }
+
+    .skill-container{
+        grid-template-columns:1fr;
+    }
+
+    .skill{
+        padding:25px;
+    }
+
+    .projects-container{
+        grid-template-columns:1fr;
+    }
+
+    .project-card{
+        padding:25px;
+    }
+
+    .contact-container{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .contact-right{
+        text-align:center;
+    }
+
+    .contact-right h3{
+        font-size:1.5rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button{
+        width:100%;
+    }
+
+    footer{
+        text-align:center;
+    }
 }
